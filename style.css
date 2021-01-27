@@ -1,3 +1,4 @@
+/* Typography */
 @font-face{
     font-family: TypoGrosteskDemo;
     src:url(assets/fonts/TypoGroteskDemo.otf) format('opentype');
@@ -9,6 +10,7 @@ body {
     font-family: TypoGrosteskDemo;
 }
 
+/* Helpers */
 .container {
     max-width: 1170px;
     padding-left: 15px;
@@ -16,7 +18,7 @@ body {
     margin: auto;
 }
 
-/* components */
+/* Components */
 .primary-btn {
     font-style: normal;
     font-weight: bold;
@@ -35,7 +37,7 @@ body {
     opacity: 0.9;
 }
 
-/* Sections */
+/* Header Section */
 .header-section nav a {
     color: #6948B7;
 }
