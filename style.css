@@ -1,0 +1,113 @@
+@font-face{
+    font-family: TypoGrosteskDemo;
+    src:url(assets/fonts/TypoGroteskDemo.otf) format('opentype');
+    font-weight:400;
+    font-style:normal
+}
+
+body {
+    font-family: TypoGrosteskDemo;
+}
+
+.container {
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/* components */
+.primary-btn {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background: #5230A2;
+    border-radius: 27px;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 32px;
+}
+
+.primary-btn:hover,
+.primary-btn:focus {
+    outline: none;
+    opacity: 0.9;
+}
+
+/* Sections */
+.header-section nav a {
+    color: #6948B7;
+}
+
+/* Hero Section */
+.hero-section__content h5 {
+    color: #6948B7;
+}
+
+.hero-section__content h1 span:last-child {
+    color: #44E0B7;
+}
+
+.hero-motorcycle-img {
+    bottom: 18%;
+    left: 0;
+}
+
+.hero-car-img {
+    margin: auto;
+}
+
+.hero-vector-46 {
+    top: 84%;
+    width: 68%;
+}
+
+.hero-vector-49 {
+    top: 84%;
+    right: 0;
+}
+
+.hero-vector-38 {
+    bottom: 60%;
+    left: 30px;
+}
+
+.hero-vector-40 {
+    bottom: 42%;
+    left: 20%;
+}
+.hero-vector-50 {
+    bottom: 80%;
+    left: 18%;
+}
+
+.hero-vector-37 {
+    bottom: 65%;
+    right: 18%;
+}
+.hero-vector-39 {
+    bottom: 44%;
+    right: 7%;
+}
+
+
+@media only screen and (min-width: 640px) {
+    .hero-car-img {
+        right: 8%;
+        top: 65%;
+    }
+}
+
+/* How we work section */
+.how-we-work-section {
+    background: #F9F8FB;
+}
+
+.how-we-work__step h5 {
+    color: #200A52;
+}
+
+.how-we-work__step p {
+    color:#898A8D;
+}
