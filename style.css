@@ -6,6 +6,13 @@
     font-style:normal
 }
 
+@font-face{
+    font-family: TypoGrosteskBoldDemo;
+    src:url(assets/fonts/TypoGroteskBoldDemo.otf) format('opentype');
+    font-weight:400;
+    font-style:normal
+}
+
 body {
     font-family: TypoGrosteskDemo;
 }
@@ -16,6 +23,14 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
+}
+
+.color-theme {
+    color: #5230A2;
+}
+
+.bg-theme {
+    background: #5230A2;
 }
 
 /* Components */
@@ -29,12 +44,57 @@ body {
     border-radius: 27px;
     transition: all 0.3s ease-in-out;
     padding: 8px 32px;
+    text-decoration: none;
+    box-shadow: none;
 }
 
 .primary-btn:hover,
 .primary-btn:focus {
     outline: none;
     opacity: 0.9;
+}
+
+.green-btn {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+    background: #44E0B7;
+    border-radius: 27px;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 32px;
+}
+
+.green-btn:hover,
+.green-btn:focus {
+    outline: none;
+    opacity: 0.9;
+}
+
+.input-container label {
+    color: #5230A2;
+}
+
+.input-container > div {
+    background: #ffffff;
+}
+
+.input-container > div span:last-child {
+    color: #A7B4C0;
+}
+
+.input-subscribe {
+    background: #140539;
+    height: 52px;
+    max-width: 372px;
+    width: 100%;
+}
+
+.input-subscribe input {
+    height: 52px;
+    color: #ffffff;
+    background: #140539;
 }
 
 /* Header Section */
@@ -112,4 +172,46 @@ body {
 
 .how-we-work__step p {
     color:#898A8D;
+}
+
+/* Calculator Section */
+.saving-calculator-cpt {
+    background: #F9F8FB;
+}
+
+.loan-amount-slider > p,
+.loan-term-slider > p {
+    color: #5230A2;
+}
+
+.loan-amount-slider__start,
+.loan-amount-slider__end,
+.loan-term-slider__start,
+.loan-term-slider__start {
+    color: #A7B4C0;
+}
+
+.loan-amount-slider__value,
+.loan-term-slider__value  {
+    color: #254254;
+    font-family: TypoGrosteskBoldDemo;
+}
+
+
+/* Footer Section */
+.footer-section {
+    background: #200A52;
+}
+
+.footer-links {
+    border-color: rgb(211 211 211 / 10%);
+}
+
+.footer-links h6 {
+    color: white;
+    font-family: TypoGrosteskBoldDemo;
+}
+
+.footer-links nav a {
+    color: #ffffff;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Refinance</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="./style.css" rel="stylesheet">
 </head>
 <body>
@@ -54,7 +55,7 @@
             <img class="hidden lg:block absolute hero-vector-39" src="assets/imgs/hero-vector-39.png" alt="Smoke"/>
         </section>
 
-        <!-- How We Work -->
+        <!-- How We Work Section -->
         <section class="how-we-work-section py-12 md:py-24">
             <div class="container">
                 <h3 class="text-center text-3xl md:text-5xl">
@@ -82,6 +83,148 @@
                 </div>
             </div>
         </section>
+
+        <!-- Calculate Saving -->
+        <section class="calculate-saving-section py-12 md:py-24">
+            <div class="container">
+                <div class="saving-calculator-cpt py-8 px-8 md:py-16 md:px-28 rounded-xl">
+                    <h4 class="text-4xl mb-10">Calculate your savings</h4>
+                    <div class="flex flex-col lg:flex-row">
+                        <div class="flex-1 m-0 lg:mr-10">
+                            <!-- Load Amount slider-->
+                            <div class="loan-amount-slider mb-10">
+                                <p class="text-sm">Loan Amount</p>
+                                <div class="flex w-full items-center h-20">
+                                    <div class="py-1 relative min-w-full">
+                                        <div class="h-2 bg-gray-200 rounded-full">
+                                            <div class="absolute h-2 rounded-full bg-theme w-0" style="width: 30%;"></div>
+                                            <div class="absolute h-4 flex items-center justify-center w-4 rounded-full bg-white shadow border border-gray-300 -ml-2 top-0 cursor-pointer" unselectable="on" onselectstart="return false;" style="left: 30%;">
+                                                <div class="relative -mt-2 w-1">
+                                                    <div class="absolute z-40 opacity-100 bottom-100 mb-2 left-0 min-w-full" style="margin-left: -20.5px;">
+                                                        <div class="relative">
+                                                            <div class="text-3xl -mt-12 truncate text-xs rounded py-1 px-4 loan-amount-slider__value"><sup class="text-base">$</sup><span> 20,000</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="absolute text-sm -ml-1 bottom-0 left-0 -mb-6 loan-amount-slider__start">$0</div>
+                                            <div class="absolute text-sm -mr-1 bottom-0 right-0 -mb-6 loan-amount-slider__end">$2 million</div>
+                                        </div>
+                                    </div>
+                                </div>                            
+                            </div>
+                            <!-- Loan Term slider-->
+                            <div class="loan-term-slider">
+                                <p class="text-sm">Loan Term</p>
+                                <div class="flex w-full items-center h-20">
+                                    <div class="py-1 relative min-w-full">
+                                        <div class="h-2 bg-gray-200 rounded-full">
+                                            <div class="absolute h-2 rounded-full bg-theme w-0" style="width: 30%;"></div>
+                                            <div class="absolute h-4 flex items-center justify-center w-4 rounded-full bg-white shadow border border-gray-300 -ml-2 top-0 cursor-pointer" unselectable="on" onselectstart="return false;" style="left: 30%;">
+                                                <div class="relative -mt-2 w-1">
+                                                    <div class="absolute z-40 opacity-100 bottom-100 mb-2 left-0 min-w-full" style="margin-left: -20.5px;">
+                                                        <div class="relative">
+                                                            <div class="text-3xl -mt-12 truncate text-xs rounded py-1 px-4 loan-term-slider__value">6 <span class="text-base">months</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="absolute text-sm -ml-1 bottom-0 left-0 -mb-6 loan-term-slider__start">1 month</div>
+                                            <div class="absolute text-sm -mr-1 bottom-0 right-0 -mb-6 loan-term-slider__end">48 months</div>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="flex flex-1 justify-between mt-10">
+                                <div class="input-container w-6/12 mr-2">
+                                    <label class="text-sm mb-4">Current Rate (APR)</label>
+                                    <div class="flex items-center h-10 px-2 border-0">
+                                        <input class="flex-1 border-0 h-10 outline-none" type="text">
+                                        <span class="text-sm">%</span>
+                                    </div>
+                                </div>
+                                <div class="input-container w-6/12 ml-2">
+                                    <label class="text-sm mb-4">New Rate (APR)</label>
+                                    <div class="flex h-10 items-center px-2 border-0">
+                                        <input class="flex-1 border-0 h-10 outline-none" type="text">
+                                        <span class="text-sm">%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Interest saved -->
+                        <div class="flex-1 ml-0 lg:ml-4 mt-12 lg:mt-0">
+                            <div class="bg-white rounded-xl py-8 px-10 relative">
+                                <p class="mb-4">You could have</p>
+                                <div class="color-theme text-8xl mb-4">
+                                    <span>$</span><span>4,515</span>
+                                </div>
+                                <p class="color-theme mb-10">In interest</p>
+                                <button class="absolute -bottom-5 primary-btn">Start saving today</button>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer-section pt-12 pb-12 md:pt-24">
+            <div class="container">
+                <div class="flex justify-center md:justify-end">
+                    <button class="green-btn">Get Quote</button>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between py-5 md:py-12 footer-links border-t border-b my-5 md:my-12">
+                    <div class="mb-5 md:mb-0">
+                        <h6 class="text-xl mb-4">Products</h6>
+                        <nav class="flex flex-col">
+                            <a href="#" class="mb-2">Vehicle Refinance</a>
+                            <a href="#" class="mb-2">Lease Purchase</a>
+                            <a href="#" class="mb-2">Motorcycle Refinance</a>
+                        </nav>
+                    </div>
+                    <div class="mb-5 md:mb-0">
+                        <h6 class="text-xl mb-4">Resources</h6>
+                        <nav class="flex flex-col">
+                            <a href="#" class="mb-2">Auto Approve Reviews</a>
+                            <a href="#" class="mb-2">Resources</a>
+                        </nav>
+                    </div>
+                    <div class="mb-5 md:mb-0">
+                        <h6 class="text-xl mb-4">Company</h6>
+                        <nav class="flex flex-col md:flex-row">
+                            <div class="flex flex-col mr-8">
+                                <a href="#" class="mb-2">About</a>
+                                <a href="#" class="mb-2">Newsroom</a>
+                                <a href="#" class="mb-2">Join the Team</a>
+                            </div>
+                            <div class="flex flex-col">
+                                <a href="#" class="mb-2">Contact Us</a>
+                                <a href="#" class="mb-2">Legal Stuff</a>
+                                <a href="#" class="mb-2">Terms of Service</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="mb-5 md:mb-0">
+                        <h6 class="text-xl mb-4"><a href="#">FAQ</a></h6>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="flex flex-1 justify-center md:justify-start mb-4 w-full md:w-6/12">
+                        <div class="flex px-5 input-subscribe rounded-full">
+                            <input class="flex-1 outline-none" type="email" placeholder="Sign up for our newsletter">
+                            <img src="assets/imgs/forward-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="flex flex-1 justify-center md:justify-end w-full md:w-6/12">
+                        <img class="mr-3" src="assets/imgs/fb.svg" />
+                        <img class="mr-3" src="assets/imgs/twitter.svg" />
+                        <img class="mr-3" src="assets/imgs/instagram.svg" />
+                        <img src="assets/imgs/pintrest.svg" />
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
