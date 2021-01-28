@@ -266,7 +266,7 @@
             <img class="ml-0 md:ml-10 mt-4 md:mt-0" src="static/imgs/smile.png" alt="Happy Customer">
           </h2>
           <div class="testimonials mt-10 md:mt-20 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-between">
-            <div class="testimonial w-full sm:w-8/12 lg:w-4/12 mr-0 lg:mr-8 mb-10 lg:mb-0 rounded-2xl bg-theme-dark p-12">
+            <div class="testimonial w-full sm:w-8/12 lg:w-4/12 mr-0 lg:mr-8 mb-10 lg:mb-0 rounded-2xl bg-theme-dark p-8 md:p-12">
               <div class="testomnial__header flex items-start justify-between mb-8">
                 <img src="static/imgs/testimonial-quote.png" />
                 <div class="flex-1 ml-3">
@@ -285,7 +285,7 @@
                 Amet minim mollit non deserunt ullamco est aliqua dolor do amet sint Velit officia consequa
               </p>
             </div>
-              <div class="testimonial w-full sm:w-8/12 lg:w-4/12 mr-0 lg:mr-8 mb-10 lg:mb-0 rounded-2xl bg-theme-dark p-12">
+              <div class="testimonial w-full sm:w-8/12 lg:w-4/12 mr-0 lg:mr-8 mb-10 lg:mb-0 rounded-2xl bg-theme-dark p-8 md:p-12">
                 <div class="testomnial__header flex items-start justify-between mb-8">
                   <img src="static/imgs/testimonial-quote.png" />
                   <div class="flex-1 ml-3">
@@ -304,7 +304,7 @@
                   Amet minim mollit non deserunt ullamco est aliqua dolor do amet sint Velit officia consequa
                 </p>
               </div>
-              <div class="testimonial w-full sm:w-8/12 lg:w-4/12 mr-0 rounded-2xl bg-theme-dark p-12">
+              <div class="testimonial w-full sm:w-8/12 lg:w-4/12 mr-0 rounded-2xl bg-theme-dark p-8 md:p-12">
                 <div class="testomnial__header flex items-start justify-between mb-8">
                   <img src="static/imgs/testimonial-quote.png" />
                   <div class="flex-1 ml-3">
@@ -338,19 +338,19 @@
           </h2>
           <div class="resources-section__resources mt-10 md:mt-20 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-between">
             <!-- RESOURCES ITEM 1 -->
-            <div class="resources-section__resource w-full sm:w-10/12 md:w-4/12 mr-0 md:mr-8 mb-10 md:mb-0 rounded-3xl p-12 bg-cover p-9">
+            <div class="resources-section__resource w-full sm:w-10/12 md:w-6/12 mr-0 md:mr-8 mb-10 lg:mb-0 rounded-3xl p-12 bg-cover p-9">
               <h6 class="text-sm mb-6 color-white">Article</h6>
               <h5 class="text-3xl mb-6 color-white">Article Title Goes Right Here</h5>
               <img src="static/imgs/arrow-right.svg" />
             </div>
             <!-- RESOURCES ITEM 1 -->
-            <div class="resources-section__resource w-full sm:w-10/12 md:w-4/12 mr-0 md:mr-8 mb-10 md:mb-0 rounded-3xl p-12 bg-cover p-9">
+            <div class="resources-section__resource w-full sm:w-10/12 md:w-6/12 mr-0 md:mr-8 mb-10 lg:mb-0 rounded-3xl p-12 bg-cover p-9">
               <h6 class="text-sm mb-6 color-white">Article</h6>
               <h5 class="text-3xl mb-6 color-white">Article Title Goes Right Here</h5>
               <img src="static/imgs/arrow-right.svg" />
             </div>
             <!-- RESOURCES ITEM 3 -->
-            <div class="resources-section__resource w-full sm:w-10/12 md:w-4/12 mr-0 md:mr-8 mb-0 md:mb-10 rounded-3xl p-12 bg-cover p-9">
+            <div class="resources-section__resource w-full sm:w-10/12 md:w-6/12 mr-0 md:mr-8 mb-0 lg:mb-10 rounded-3xl p-12 bg-cover p-9">
               <h6 class="text-sm mb-6 color-white">Article</h6>
               <h5 class="text-3xl mb-6 color-white">Article Title Goes Right Here</h5>
               <img src="static/imgs/arrow-right.svg" />
@@ -373,43 +373,52 @@
 
       <!-- FOOTER SECTION -->
       <footer class="footer-section pt-12 pb-12 md:pt-24 relative">
-        <img class="hidden 2xl:block absolute bottom-24 right-10" src="static/imgs/chat-icon.png" />
+        <img class="2xl:block absolute bottom-8 md:bottom-24 right-4 md:right-10" src="static/imgs/chat-icon.png" />
         <div class="container">
           <div class="flex flex-col md:flex-row items-center justify-center md:justify-between">
             <a class="mb-10 md:mb-0" href="#"><img src="static/imgs/autoapprove-logo-white.png" alt="Auto Approve" /></a>
             <div class="flex items-center justify-center md:justify-end">
-              <a class="color-theme mb-0 mt-3 lg:mb-3 color-green" href="tel:(844) 336-3365">(844) 336-3365</a>
-              <button class="green-btn ml-10">Get Quote</button>
+              <button class="order-1 md:order-2 green-btn mr-10 md:mr-0">Get Quote</button>
+              <a class="order-2 md:order-1 color-theme mb-0 mt-3 lg:mb-3 color-green" href="tel:(844) 336-3365">(844) 336-3365</a>
             </div>
           </div>
-          <div class="flex flex-col md:flex-row justify-between py-5 md:py-12 footer-links border-t border-b my-5 md:my-12">
+          <div class="flex flex-col md:flex-row justify-between py-5 md:py-12 footer-links md:border-t md:border-b my-5 md:my-12">
             <!-- FOOTER LINKS COL 1-->
-            <div class="mb-5 md:mb-0">
-              <h6 class="text-xl mb-4">Products</h6>
-              <nav class="flex flex-col">
+            <div>
+              <div class="footer-links__header flex justify-between items-center border-b md:border-b-0 py-4 md:py-0">
+                <h6 class="text-xl m-0 md:mb-4">Products</h6>
+                <img class="block md:hidden" src="static/imgs/expand-icon.png" />
+              </div>
+              <nav class="hidden md:flex flex-col">
                 <a href="#" class="mb-2">Vehicle Refinance</a>
                 <a href="#" class="mb-2">Lease Purchase</a>
                 <a href="#" class="mb-2">Motorcycle Refinance</a>
               </nav>
             </div>
             <!-- FOOTER LINKS COL 2 -->
-            <div class="mb-5 md:mb-0">
-              <h6 class="text-xl mb-4">Resources</h6>
-              <nav class="flex flex-col">
+            <div>
+              <div class="footer-links__header flex justify-between items-center border-b md:border-b-0 py-4 md:py-0">
+                <h6 class="text-xl m-0 md:mb-4">Resources</h6>
+                <img class="block md:hidden" src="static/imgs/expand-icon.png" />
+              </div>
+              <nav class="hidden md:flex flex-col">
                 <a href="#" class="mb-2">Auto Approve Reviews</a>
                 <a href="#" class="mb-2">Resources</a>
               </nav>
             </div>
             <!-- FOOTER LINKS COL 3 -->
-            <div class="mb-5 md:mb-0">
-              <h6 class="text-xl mb-4">Company</h6>
+            <div>
+              <div class="footer-links__header flex justify-between items-center border-b md:border-b-0 py-4 md:py-0">
+                <h6 class="text-xl m-0 md:mb-4">Company</h6>
+                <img class="block md:hidden" src="static/imgs/expand-icon.png" />
+              </div>
               <nav class="flex flex-col md:flex-row">
-                <div class="flex flex-col mr-8">
+                <div class="hidden md:flex flex-col mr-8">
                   <a href="#" class="mb-2">About</a>
                   <a href="#" class="mb-2">Newsroom</a>
                   <a href="#" class="mb-2">Join the Team</a>
                 </div>
-                <div class="flex flex-col">
+                <div class="hidden md:flex flex-col">
                   <a href="#" class="mb-2">Contact Us</a>
                   <a href="#" class="mb-2">Legal Stuff</a>
                   <a href="#" class="mb-2">Terms of Service</a>
@@ -417,23 +426,33 @@
               </nav>
             </div>
             <!-- FOOTER LINKS COL 4 -->
-            <div class="mb-5 md:mb-0">
-              <h6 class="text-xl mb-4"><a href="#">FAQ</a></h6>
+            <div>
+              <div class="footer-links__header flex justify-between items-center border-b md:border-b-0 py-4 md:py-0">
+                <h6 class="text-xl m-0 md:mb-4">FAQ</h6>
+                <img class="block md:hidden" src="static/imgs/expand-icon.png" />
+              </div>
+            </div>
+            <!-- FOOTER LINKS COL 4 -->
+            <div class="block md:hidden">
+              <div class="footer-links__header flex justify-between items-center border-b-0 py-4 md:py-0">
+                <h6 class="text-xl m-0 md:mb-4">Calculators</h6>
+                <img class="block md:hidden" src="static/imgs/expand-icon.png" />
+              </div>
             </div>
           </div>
-          <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="flex flex-col md:flex-row justify-between">
             <div class="flex flex-1 justify-center md:justify-start mb-4 w-full md:w-6/12">
               <!-- NEWSLETTER -->
               <div class="flex px-5 input-subscribe rounded-full">
-                <input class="flex-1 outline-none placeholder-white" type="email" placeholder="Sign up for our newsletter">
+                <input class="w-full flex-1 outline-none placeholder-white" type="email" placeholder="Sign up for our newsletter">
                 <img src="static/imgs/forward-arrow.svg">
               </div>
             </div>
             <!-- SOCIAL ICONS -->
-            <div class="flex flex-1 justify-center md:justify-end w-full md:w-6/12">
-              <img class="mr-3" src="static/imgs/fb.svg" />
-              <img class="mr-3" src="static/imgs/twitter.svg" />
-              <img class="mr-3" src="static/imgs/instagram.svg" />
+            <div class="flex flex-1 justify-center md:justify-end w-6/12 mt-10">
+              <img class="mr-4" src="static/imgs/fb.svg" />
+              <img class="mr-4" src="static/imgs/twitter.svg" />
+              <img class="mr-4" src="static/imgs/instagram.svg" />
               <img src="static/imgs/pintrest.svg" />
             </div>
           </div>
