@@ -188,7 +188,7 @@ body {
 .loan-amount-slider__start,
 .loan-amount-slider__end,
 .loan-term-slider__start,
-.loan-term-slider__start {
+.loan-term-slider__end {
     color: #A7B4C0;
 }
 
