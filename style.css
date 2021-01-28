@@ -201,6 +201,7 @@ body {
 /* Auto Refinance section */
 .auto-refinance__product h4 {
     color: #200A52;
+    font-family: TypoGrosteskBoldDemo;
 }
 
 .auto-refinance__product p {
@@ -209,6 +210,16 @@ body {
 
 .auto-refinance__product a {
     color: #44E0B7;
+}
+
+/* Auto Approve section */
+.auto-approve__reason h4 {
+    color: #232529;
+    font-family: TypoGrosteskBoldDemo;
+}
+
+.auto-approve__reason p {
+    color: #4F5154;
 }
 
 /* Footer Section */
