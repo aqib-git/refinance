@@ -11,33 +11,36 @@
 <body>
     <main>
       <!-- HEADER SECTION -->
-      <header class="header-section absolute md:relative w-full">
+      <header class="header-section absolute w-full">
         <div class="container">
-          <div class="flex flex-col md:flex-row flex-wrap justify-center items-center py-10 relative">
-            <a class="static mb-4 lg:mb-0 md:absolute left-0" href="#"><img src="static/imgs/autoapprove-logo.png" alt="Auto Approve" /></a>
-            <nav class="flex">
+          <div class="flex md:flex-row md:flex-wrap justify-between md:justify-center items-center py-10 relative">
+            <a class="static md:absolute left-0" href="#"><img src="static/imgs/autoapprove-logo.png" alt="Auto Approve" /></a>
+            <nav class="hidden md:flex">
               <a class="text-sm px-2 lg:px-4 no-underline" href="#">Why Auto Approve</a>
               <a class="text-sm px-2 lg:px-4 no-underline" href="#">Products</a>
               <a class="text-sm px-2 lg:px-4 no-underline" href="#">Resources</a>
               <a class="text-sm px-2 lg:px-4 no-underline" href="#">FAQ</a>
             </nav>
-            <div class="static md:absolute right-0 flex flex-col items-center">
+            <div class="hidden header-section__quote static md:absolute right-0 md:flex flex-col items-center">
               <a class="color-theme mb-0 mt-3 lg:mb-3" href="tel:(844) 336-3365">(844) 336-3365</a>
               <button class="primary-btn">Get a quote</button>
+            </div>
+            <div class="block md:hidden">
+              <img src="static/imgs/menu-icon.png" alt="Menu"/>
             </div>
           </div>
         </div>
       </header>
 
       <!-- HERO SECTION -->
-      <section class="hero-section pt-60 pb-44 sm:pb-60 lg:pt-80 lg:pb-96 relative overflow-hidden">
+      <section class="hero-section pt-36 pb-20 sm:pb-80 lg:pt-80 lg:pb-96 relative overflow-hidden">
         <div class="container relative z-10">
           <div class="hero-section__content flex flex-col justify-center items-center text-center">
             <h5 class="uppercase mb-4 text-xl">A better way to refinance your automobile</h5>
             <h1 class="text-3xl md:text-6xl">
               <span class="block md:inline-block">Less Paperwork</span>
               <span class="block md:inline-block">Less Time</span>
-              <span class="block">Lower Payments</span>
+              <span class="block">More Dollars</span>
             </h1>
             <p class="my-4">Rates as low as 1,9% APR<sup>*</sup></p>
             <button class="primary-btn mt-4">Get your quote in minutes</button>
@@ -48,15 +51,15 @@
         <img class="absolute hero-vector-46 z-0" src="static/imgs/hero-vector-46.png" alt="Divider"/>
         <img class="absolute hero-vector-49 z-0" src="static/imgs/hero-vector-49.png" alt="Divider"/>
 
-        <img class="absolute hero-car-img z-0" src="static/imgs/hero-car.png" alt="Motor Car"/>
+        <img class="static mx-auto mt-24 md:mt-0 md:absolute hero-car-img z-0" src="static/imgs/hero-motorcar.png" alt="Motor Car"/>
 
-        <img class="hidden lg:block absolute hero-vector-38" src="static/imgs/hero-vector-38.png" alt="Smoke"/>
+        <img class="block absolute hero-vector-38" src="static/imgs/hero-vector-38.png" alt="Smoke"/>
 
         <img class="hidden lg:block absolute hero-vector-40" src="static/imgs/hero-vector-40.png" alt="Smoke"/>
         <img class="hidden lg:block absolute hero-vector-50" src="static/imgs/hero-vector-50.png" alt="Smoke"/>
 
         <img class="hidden lg:block absolute hero-vector-37" src="static/imgs/hero-vector-37.png" alt="Smoke"/>
-        <img class="hidden lg:block absolute hero-vector-39" src="static/imgs/hero-vector-39.png" alt="Smoke"/>
+        <img class="block absolute hero-vector-39" src="static/imgs/hero-vector-39.png" alt="Smoke"/>
       </section>
 
       <!-- HOW WE WORK SECTION -->
@@ -68,13 +71,13 @@
           </h3>
           <div class="how-we-work__steps flex flex-col md:flex-row justify-center items-start md:justify-between py-12">
             <!-- HOW WE WORK STEP 1 -->
-            <div class="how-we-work__step flex flex-col items-center justify-center mx-auto w-8/12 md:w-3/12 text-center mb-12 md:mb-0">
+            <div class="how-we-work__step flex flex-col items-center justify-center mx-auto w-8/12 md:w-3/12 text-center mb-24 md:mb-0">
               <img src="static/imgs/hww-step1.png" />
               <h6 class="mt-5 mb-3 text-xl md:text-3xl">It starts with a quote</h6>
               <p>(SSN not required)</p>
             </div>
             <!-- HOW WE WORK STEP 2 -->
-            <div class="how-we-work__step flex flex-col items-center justify-center mx-auto w-8/12 md:w-3/12  text-center mb-12 md:mb-0">
+            <div class="how-we-work__step flex flex-col items-center justify-center mx-auto w-8/12 md:w-3/12  text-center mb-24 md:mb-0">
               <img src="static/imgs/hww-step2.png" />
               <h6 class="mt-5 mb-3 text-xl md:text-3xl">We’ll work with banks and credit unions to get your the best rate</h6>
               <p>(and handle the paperwork)</p>
@@ -94,7 +97,7 @@
       <!-- SAVING SECTION -->
       <section class="calculate-saving-section py-12 md:py-24">
         <div class="container">
-          <div class="saving-calculator-cpt py-8 px-8 md:py-16 md:px-28 rounded-xl">
+          <div class="saving-calculator-cpt py-8 px-4 md:py-16 md:px-28 rounded-xl">
               <h4 class="text-2xl md:text-4xl mb-10">Calculate your savings</h4>
               <div class="flex flex-col lg:flex-row">
                 <div class="flex-1 m-0 lg:mr-10">
@@ -146,14 +149,14 @@
                     <div class="input-container w-6/12 mr-2">
                       <label class="text-sm mb-4">Current Rate (APR)</label>
                       <div class="flex items-center h-10 px-2 border-0">
-                        <input class="flex-1 border-0 h-10 outline-none" type="text">
+                        <input class="w-full flex-1 border-0 h-10 outline-none" type="text">
                         <span class="text-sm">%</span>
                       </div>
                     </div>
                     <div class="input-container w-6/12 ml-2">
                       <label class="text-sm mb-4">New Rate (APR)</label>
                       <div class="flex h-10 items-center px-2 border-0">
-                        <input class="flex-1 border-0 h-10 outline-none" type="text">
+                        <input class="w-full flex-1 border-0 h-10 outline-none" type="text">
                         <span class="text-sm">%</span>
                       </div>
                     </div>
@@ -161,9 +164,9 @@
                 </div>
                 <!-- Interest saved -->
                 <div class="flex-1 ml-0 lg:ml-4 mt-12 lg:mt-0">
-                  <div class="bg-white rounded-xl py-8 px-10 relative">
+                  <div class="flex flex-col items-center md:items-start bg-white rounded-xl py-8 px-10 relative">
                     <p class="mb-4">You could have</p>
-                    <div class="color-theme text-4xl md:text-8xl mb-4">
+                    <div class="color-theme text-6xl md:text-8xl mb-4">
                       <span>$</span><span>4,515</span>
                     </div>
                     <p class="color-theme mb-10">In interest</p>
