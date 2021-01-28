@@ -16,9 +16,15 @@ yarn run build:dev
 
 *dist* folder will be created which contains home page index.html with assets and this can be deployed on the server.
 
-If you have php installed start web server inside dist directory
+Install local web server
+
+```
+ npm install -g local-web-server
+```
+
+Then start web server from dist by running following commands
 
 ```
 cd dist
-php -S localhost:4000 -t .
+ws
 ```
