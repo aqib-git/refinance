@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin       = require('mini-css-extract-plugin');
 const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 
 const env = process.env.NODE_ENV;
 
@@ -9,7 +10,7 @@ module.exports = {
     mode: process.env.NODE_ENV,
     entry: path.resolve(__dirname, '/src/js/index.js'),
     output: {
-      publicPath: '/dist/',
+      publicPath: '/',
       filename: env === 'development' ? 'js/bundle.js' : 'js/bundle.[contenthash].min.js'
     },
     module: {
@@ -37,7 +38,7 @@ module.exports = {
             {
               loader: 'url-loader',
               options: {
-                name: '/imgs/[name].[ext]?hash=[hash:20]',
+                name: 'imgs/[name].[ext]?hash=[hash:20]',
                 limit: 8192
               }
             }
@@ -51,7 +52,7 @@ module.exports = {
             {
               loader: 'file-loader',
               options: {
-                name: '/fonts/[name].[ext]?hash=[hash:20]',
+                name: 'fonts/[name].[ext]?hash=[hash:20]',
               }
             }
           ]
@@ -60,6 +61,13 @@ module.exports = {
     },
     plugins: [
       new CleanWebpackPlugin(),
+
+      new CopyPlugin({
+        patterns: [
+          { from: "./src/pages/index.html", to: "./index.html" },
+          { from: "./static/**/*", to: "./" },
+        ],
+      }),
 
       new WebpackBuildNotifierPlugin(),
 
