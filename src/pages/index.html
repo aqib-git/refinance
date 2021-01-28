@@ -11,22 +11,26 @@
 <body>
     <main>
       <!-- HEADER SECTION -->
-      <header class="header-section absolute w-full">
+      <header class="header-section absolute md:relative w-full">
         <div class="container">
-          <div class="flex flex-col md:flex-row flex-wrap justify-center items-center py-10 absolute md:relative w-full">
+          <div class="flex flex-col md:flex-row flex-wrap justify-center items-center py-10 relative">
+            <a class="static mb-4 lg:mb-0 md:absolute left-0" href="#"><img src="static/imgs/autoapprove-logo.png" alt="Auto Approve" /></a>
             <nav class="flex">
-              <a class="text-sm px-2 sm:px-4 no-underline" href="#">Why Auto Approve</a>
-              <a class="text-sm px-2 sm:px-4 no-underline" href="#">Products</a>
-              <a class="text-sm px-2 sm:px-4 no-underline" href="#">Resources</a>
-              <a class="text-sm px-2 sm:px-4 no-underline" href="#">FAQ</a>
+              <a class="text-sm px-2 lg:px-4 no-underline" href="#">Why Auto Approve</a>
+              <a class="text-sm px-2 lg:px-4 no-underline" href="#">Products</a>
+              <a class="text-sm px-2 lg:px-4 no-underline" href="#">Resources</a>
+              <a class="text-sm px-2 lg:px-4 no-underline" href="#">FAQ</a>
             </nav>
-            <button class="primary-btn static md:absolute right-0 mt-3 md:mt-0">Get a quote</button>
+            <div class="static md:absolute right-0 flex flex-col items-center">
+              <a class="color-theme mb-0 mt-3 lg:mb-3" href="tel:(844) 336-3365">(844) 336-3365</a>
+              <button class="primary-btn">Get a quote</button>
+            </div>
           </div>
         </div>
       </header>
 
       <!-- HERO SECTION -->
-      <section class="hero-section pt-44 pb-44 sm:pb-60 lg:pt-80 lg:pb-96 relative overflow-hidden">
+      <section class="hero-section pt-60 pb-44 sm:pb-60 lg:pt-80 lg:pb-96 relative overflow-hidden">
         <div class="container relative z-10">
           <div class="hero-section__content flex flex-col justify-center items-center text-center">
             <h5 class="uppercase mb-4 text-xl">A better way to refinance your automobile</h5>
@@ -367,64 +371,70 @@
       <!-- FOOTER SECTION -->
       <footer class="footer-section pt-12 pb-12 md:pt-24">
         <div class="container">
-            <div class="flex justify-center md:justify-end">
-              <button class="green-btn">Get Quote</button>
+          <div class="flex flex-col md:flex-row items-center justify-center md:justify-between">
+            <a class="mb-10 md:mb-0" href="#"><img src="static/imgs/autoapprove-logo-white.png" alt="Auto Approve" /></a>
+            <div class="flex items-center justify-center md:justify-end">
+              <a class="color-theme mb-0 mt-3 lg:mb-3 color-green" href="tel:(844) 336-3365">(844) 336-3365</a>
+              <button class="green-btn ml-10">Get Quote</button>
             </div>
-            <div class="flex flex-col md:flex-row justify-between py-5 md:py-12 footer-links border-t border-b my-5 md:my-12">
-              <!-- FOOTER LINKS COL 1-->
-              <div class="mb-5 md:mb-0">
-                <h6 class="text-xl mb-4">Products</h6>
-                <nav class="flex flex-col">
-                  <a href="#" class="mb-2">Vehicle Refinance</a>
-                  <a href="#" class="mb-2">Lease Purchase</a>
-                  <a href="#" class="mb-2">Motorcycle Refinance</a>
-                </nav>
-              </div>
-              <!-- FOOTER LINKS COL 2 -->
-              <div class="mb-5 md:mb-0">
-                <h6 class="text-xl mb-4">Resources</h6>
-                <nav class="flex flex-col">
-                  <a href="#" class="mb-2">Auto Approve Reviews</a>
-                  <a href="#" class="mb-2">Resources</a>
-                </nav>
-              </div>
-              <!-- FOOTER LINKS COL 3 -->
-              <div class="mb-5 md:mb-0">
-                <h6 class="text-xl mb-4">Company</h6>
-                <nav class="flex flex-col md:flex-row">
-                  <div class="flex flex-col mr-8">
-                    <a href="#" class="mb-2">About</a>
-                    <a href="#" class="mb-2">Newsroom</a>
-                    <a href="#" class="mb-2">Join the Team</a>
-                  </div>
-                  <div class="flex flex-col">
-                    <a href="#" class="mb-2">Contact Us</a>
-                    <a href="#" class="mb-2">Legal Stuff</a>
-                    <a href="#" class="mb-2">Terms of Service</a>
-                  </div>
-                </nav>
-              </div>
-              <!-- FOOTER LINKS COL 4 -->
-              <div class="mb-5 md:mb-0">
-                <h6 class="text-xl mb-4"><a href="#">FAQ</a></h6>
-              </div>
+          </div>
+          <div class="flex flex-col md:flex-row justify-between py-5 md:py-12 footer-links border-t border-b my-5 md:my-12">
+            <!-- FOOTER LINKS COL 1-->
+            <div class="mb-5 md:mb-0">
+              <h6 class="text-xl mb-4">Products</h6>
+              <nav class="flex flex-col">
+                <a href="#" class="mb-2">Vehicle Refinance</a>
+                <a href="#" class="mb-2">Lease Purchase</a>
+                <a href="#" class="mb-2">Motorcycle Refinance</a>
+              </nav>
             </div>
-            <div class="flex flex-col md:flex-row justify-between items-center">
-              <div class="flex flex-1 justify-center md:justify-start mb-4 w-full md:w-6/12">
-                <!-- NEWSLETTER -->
-                <div class="flex px-5 input-subscribe rounded-full">
-                  <input class="flex-1 outline-none placeholder-white" type="email" placeholder="Sign up for our newsletter">
-                  <img src="static/imgs/forward-arrow.svg">
+            <!-- FOOTER LINKS COL 2 -->
+            <div class="mb-5 md:mb-0">
+              <h6 class="text-xl mb-4">Resources</h6>
+              <nav class="flex flex-col">
+                <a href="#" class="mb-2">Auto Approve Reviews</a>
+                <a href="#" class="mb-2">Resources</a>
+              </nav>
+            </div>
+            <!-- FOOTER LINKS COL 3 -->
+            <div class="mb-5 md:mb-0">
+              <h6 class="text-xl mb-4">Company</h6>
+              <nav class="flex flex-col md:flex-row">
+                <div class="flex flex-col mr-8">
+                  <a href="#" class="mb-2">About</a>
+                  <a href="#" class="mb-2">Newsroom</a>
+                  <a href="#" class="mb-2">Join the Team</a>
                 </div>
-              </div>
-              <!-- SOCIAL ICONS -->
-              <div class="flex flex-1 justify-center md:justify-end w-full md:w-6/12">
-                <img class="mr-3" src="static/imgs/fb.svg" />
-                <img class="mr-3" src="static/imgs/twitter.svg" />
-                <img class="mr-3" src="static/imgs/instagram.svg" />
-                <img src="static/imgs/pintrest.svg" />
+                <div class="flex flex-col">
+                  <a href="#" class="mb-2">Contact Us</a>
+                  <a href="#" class="mb-2">Legal Stuff</a>
+                  <a href="#" class="mb-2">Terms of Service</a>
+                </div>
+              </nav>
+            </div>
+            <!-- FOOTER LINKS COL 4 -->
+            <div class="mb-5 md:mb-0">
+              <h6 class="text-xl mb-4"><a href="#">FAQ</a></h6>
+            </div>
+          </div>
+          <div class="flex flex-col md:flex-row justify-between items-center relative">
+            <img class="hidden 2xl:block absolute -top-10 -right-28" src="static/imgs/chat-icon.png" />
+
+            <div class="flex flex-1 justify-center md:justify-start mb-4 w-full md:w-6/12">
+              <!-- NEWSLETTER -->
+              <div class="flex px-5 input-subscribe rounded-full">
+                <input class="flex-1 outline-none placeholder-white" type="email" placeholder="Sign up for our newsletter">
+                <img src="static/imgs/forward-arrow.svg">
               </div>
             </div>
+            <!-- SOCIAL ICONS -->
+            <div class="flex flex-1 justify-center md:justify-end w-full md:w-6/12">
+              <img class="mr-3" src="static/imgs/fb.svg" />
+              <img class="mr-3" src="static/imgs/twitter.svg" />
+              <img class="mr-3" src="static/imgs/instagram.svg" />
+              <img src="static/imgs/pintrest.svg" />
+            </div>
+          </div>
         </div>
       </footer>
     </main>
