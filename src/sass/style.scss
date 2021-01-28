@@ -20,262 +20,255 @@ body {
 }
 
 /* Helpers */
-.container {
-    max-width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: auto;
-}
-
 .color-theme {
-    color: #5230A2;
+  color: #5230A2;
 }
 
 .bg-theme {
-    background: #5230A2;
+  background: #5230A2;
 }
 
 .bg-theme-dark {
-    background: #200A52;
+  background: #200A52;
 }
 
 .color-white {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .color-green {
-    color: #44E0B7;
+  color: #44E0B7;
 }
 
 /* Components */
 .primary-btn {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 28px;
-    color: #FFFFFF;
-    background: #5230A2;
-    border-radius: 27px;
-    transition: all 0.3s ease-in-out;
-    padding: 8px 32px;
-    text-decoration: none;
-    box-shadow: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  background: #5230A2;
+  border-radius: 27px;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 32px;
+  text-decoration: none;
+  box-shadow: none;
 }
 
 .primary-btn:hover,
 .primary-btn:focus {
-    outline: none;
-    opacity: 0.9;
+  outline: none;
+  opacity: 0.9;
 }
 
 .green-btn {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 28px;
-    color: #000000;
-    background: #44E0B7;
-    border-radius: 27px;
-    transition: all 0.3s ease-in-out;
-    padding: 8px 32px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+  background: #44E0B7;
+  border-radius: 27px;
+  transition: all 0.3s ease-in-out;
+  padding: 8px 32px;
 }
 
 .green-btn:hover,
 .green-btn:focus {
-    outline: none;
-    opacity: 0.9;
+  outline: none;
+  opacity: 0.9;
 }
 
 .input-container label {
-    color: #5230A2;
+  color: #5230A2;
 }
 
 .input-container > div {
-    background: #ffffff;
+  background: #ffffff;
 }
 
 .input-container > div span:last-child {
-    color: #A7B4C0;
+  color: #A7B4C0;
 }
 
 .input-subscribe {
-    background: #140539;
-    height: 52px;
-    max-width: 372px;
-    width: 100%;
+  background: #140539;
+  height: 52px;
+  max-width: 372px;
+  width: 100%;
 }
 
 .input-subscribe input {
-    height: 52px;
-    color: #ffffff;
-    background: #140539;
+  height: 52px;
+  color: #ffffff;
+  background: #140539;
 }
 
 
 /* Header Section */
 .header-section nav a {
-    color: #6948B7;
+  color: #6948B7;
 }
 
 /* Hero Section */
 .hero-section__content h5 {
-    color: #6948B7;
+  color: #6948B7;
 }
 
 .hero-section__content h1 span:last-child {
-    color: #44E0B7;
+  color: #44E0B7;
 }
 
 .hero-motorcycle-img {
-    bottom: 18%;
-    left: 0;
+  bottom: 18%;
+  left: 0;
 }
 
 .hero-car-img {
-    margin: auto;
+  margin: auto;
 }
 
 .hero-vector-46 {
-    top: 84%;
-    width: 68%;
+  top: 84%;
+  width: 68%;
 }
 
 .hero-vector-49 {
-    top: 84%;
-    right: 0;
+  top: 84%;
+  right: 0;
 }
 
 .hero-vector-38 {
-    bottom: 60%;
-    left: 30px;
+  bottom: 60%;
+  left: 30px;
 }
 
 .hero-vector-40 {
-    bottom: 42%;
-    left: 20%;
+  bottom: 42%;
+  left: 20%;
 }
 .hero-vector-50 {
-    bottom: 80%;
-    left: 18%;
+  bottom: 80%;
+  left: 18%;
 }
 
 .hero-vector-37 {
-    bottom: 65%;
-    right: 18%;
+  bottom: 65%;
+  right: 18%;
 }
 .hero-vector-39 {
-    bottom: 44%;
-    right: 7%;
+  bottom: 44%;
+  right: 7%;
 }
 
 
 @media only screen and (min-width: 640px) {
-    .hero-car-img {
-        right: 8%;
-        top: 65%;
-    }
+  .hero-car-img {
+    right: 8%;
+    top: 65%;
+  }
 }
 
 /* How we work section */
 .how-we-work-section {
-    background: #F9F8FB;
+  background: #F9F8FB;
 }
 
 .how-we-work__step h5 {
-    color: #200A52;
+  color: #200A52;
 }
 
 .how-we-work__step p {
-    color:#898A8D;
+  color:#898A8D;
 }
 
 /* Calculator Section */
 .saving-calculator-cpt {
-    background: #F9F8FB;
+  background: #F9F8FB;
 }
 
 .loan-amount-slider > p,
 .loan-term-slider > p {
-    color: #5230A2;
+  color: #5230A2;
 }
 
 .loan-amount-slider__start,
 .loan-amount-slider__end,
 .loan-term-slider__start,
 .loan-term-slider__end {
-    color: #A7B4C0;
+  color: #A7B4C0;
 }
 
 .loan-amount-slider__value,
 .loan-term-slider__value  {
-    color: #254254;
-    font-family: TypoGrosteskBoldDemo;
+  color: #254254;
+  font-family: TypoGrosteskBoldDemo;
 }
 
 /* Auto Refinance section */
 .auto-refinance__product h4 {
-    color: #200A52;
-    font-family: TypoGrosteskBoldDemo;
+  color: #200A52;
+  font-family: TypoGrosteskBoldDemo;
 }
 
 .auto-refinance__product p {
-    color: #4F5154;
+  color: #4F5154;
 }
 
 .auto-refinance__product a {
-    color: #44E0B7;
+  color: #44E0B7;
 }
 
 /* Auto Approve section */
 .auto-approve__reason h4 {
-    color: #232529;
-    font-family: TypoGrosteskBoldDemo;
+  color: #232529;
+  font-family: TypoGrosteskBoldDemo;
 }
 
 .auto-approve__reason p {
-    color: #4F5154;
+  color: #4F5154;
 }
 
 /* Testimonial section */
 .testimonial-section h2 {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /* Resources section */
 .resources-section {
-    background: #F9F8FB;
+  background: #F9F8FB;
 }
 
 .resources-section__resources > div:nth-of-type(1) {
-    background-image: url(../../static/imgs/resource-1.png);
+  background-image: url(../../static/imgs/resource-1.png);
 }
 
 .resources-section__resources > div:nth-of-type(2) {
-    background-image: url(../../static/imgs/resource-3.png);
+  background-image: url(../../static/imgs/resource-3.png);
 }
 
 .resources-section__resources > div:nth-of-type(3) {
-    background-image: url(../../static/imgs/resource-3.png);
+  background-image: url(../../static/imgs/resource-3.png);
 }
 
 .resources-section__resource {
-    min-height: 324px;
+  min-height: 324px;
 }
 
 /* Footer Section */
 .footer-section {
-    background: #200A52;
+  background: #200A52;
 }
 
 .footer-links {
-    border-color: rgb(211 211 211 / 10%);
+  border-color: rgb(211 211 211 / 10%);
 }
 
 .footer-links h6 {
-    color: white;
-    font-family: TypoGrosteskBoldDemo;
+  color: white;
+  font-family: TypoGrosteskBoldDemo;
 }
 
 .footer-links nav a {
-    color: #ffffff;
+  color: #ffffff;
 }

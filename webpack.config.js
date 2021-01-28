@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin       = require('mini-css-extract-plugin');
 const WebpackBuildNotifierPlugin = require('webpack-build-notifier');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const env = process.env.NODE_ENV;
 
@@ -9,7 +10,7 @@ module.exports = {
     entry: path.resolve(__dirname, '/src/js/index.js'),
     output: {
       publicPath: '/dist/',
-      filename: env === 'development' ? 'js/bundle.js' : 'js/bundle.[contenthash].min.js',
+      filename: env === 'development' ? 'js/bundle.js' : 'js/bundle.[contenthash].min.js'
     },
     module: {
       rules: [
@@ -23,7 +24,7 @@ module.exports = {
         {
           test: /\.(sa|sc|c)ss$/,
           use: [
-            env === 'development' ? 'style-loader' : MiniCssExtractPlugin.loader,
+            MiniCssExtractPlugin.loader,
             { loader: 'css-loader', options: { importLoaders: 2, sourceMap: true } },
             { loader: 'postcss-loader', options: { sourceMap: true } },
             { loader: 'sass-loader', options: { implementation: require('sass'), sourceMap: true } },
@@ -58,10 +59,12 @@ module.exports = {
       ],
     },
     plugins: [
-        new WebpackBuildNotifierPlugin(),
+      new CleanWebpackPlugin(),
 
-        new MiniCssExtractPlugin({
-          filename: 'css/build.min.css'
-        }),
+      new WebpackBuildNotifierPlugin(),
+
+      new MiniCssExtractPlugin({
+        filename: 'css/build.min.css'
+      }),
     ],
 }
