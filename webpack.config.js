@@ -8,7 +8,7 @@ const env = process.env.NODE_ENV;
 
 module.exports = {
     mode: process.env.NODE_ENV,
-    entry: path.resolve(__dirname, '/src/js/index.js'),
+    entry: path.resolve(__dirname, 'src/js/index.js'),
     output: {
       publicPath: '/',
       filename: env === 'development' ? 'js/bundle.js' : 'js/bundle.[contenthash].min.js'
