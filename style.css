@@ -33,6 +33,18 @@ body {
     background: #5230A2;
 }
 
+.bg-theme-dark {
+    background: #200A52;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.color-green {
+    color: #44E0B7;
+}
+
 /* Components */
 .primary-btn {
     font-style: normal;
@@ -221,6 +233,12 @@ body {
 .auto-approve__reason p {
     color: #4F5154;
 }
+
+/* Testimonial section */
+.testimonial-section h2 {
+    color: #ffffff;
+}
+
 
 /* Footer Section */
 .footer-section {
