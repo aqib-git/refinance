@@ -167,6 +167,35 @@ body {
   width: 100px;
 }
 
+.hero-vector-54,
+.hero-vector-53,
+.hero-vector-41,
+.hero-vector-52,
+.hero-vector-55,
+.hero-vector-45 {
+  bottom: 260px;
+}
+
+.hero-vector-54 {
+  left: 0;
+}
+
+.hero-vector-53 {
+  left: 2%;
+}
+
+.hero-vector-41 {
+  left: 23%;
+}
+
+.hero-vector-52 {
+  left: calc(64% - 5px);
+}
+
+.hero-vector-45 {
+  right: 20px;
+}
+
 @media only screen and (min-width: 768px) {
   .hero-car-img {
     right: 10%;
