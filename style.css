@@ -198,6 +198,18 @@ body {
     font-family: TypoGrosteskBoldDemo;
 }
 
+/* Auto Refinance section */
+.auto-refinance__product h4 {
+    color: #200A52;
+}
+
+.auto-refinance__product p {
+    color: #4F5154;
+}
+
+.auto-refinance__product a {
+    color: #44E0B7;
+}
 
 /* Footer Section */
 .footer-section {
