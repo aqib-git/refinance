@@ -11,18 +11,18 @@
 <body>
     <main>
       <!-- HEADER SECTION -->
-      <header class="header-section absolute w-full">
+      <header class="header-section absolute w-full z-10">
         <div class="container">
           <div class="flex md:flex-row md:flex-wrap justify-between md:justify-center items-center py-10 relative">
             <a class="static md:absolute left-0" href="#"><img src="static/imgs/autoapprove-logo.svg" alt="Auto Approve" /></a>
             <nav class="hidden md:flex">
-              <a class="text-sm px-2 lg:px-4 no-underline" href="#">Why Auto Approve</a>
-              <a class="text-sm px-2 lg:px-4 no-underline" href="#">Products</a>
-              <a class="text-sm px-2 lg:px-4 no-underline" href="#">Resources</a>
-              <a class="text-sm px-2 lg:px-4 no-underline" href="#">FAQ</a>
+              <a class="text-sm px-2 lg:px-4 no-underline text-color-theme-2" href="#">Why Auto Approve</a>
+              <a class="text-sm px-2 lg:px-4 no-underline text-color-theme-2" href="#">Products</a>
+              <a class="text-sm px-2 lg:px-4 no-underline text-color-theme-2" href="#">Resources</a>
+              <a class="text-sm px-2 lg:px-4 no-underline text-color-theme-2" href="#">FAQ</a>
             </nav>
             <div class="hidden header-section__quote static md:absolute right-0 md:flex flex-col items-center">
-              <a class="color-theme mb-0 mt-3 lg:mb-3" href="tel:(844) 336-3365">(844) 336-3365</a>
+              <a class="text-color-theme mb-0 mt-3 lg:mb-3 font-typo-grotesk-b" href="tel:(844) 336-3365">(844) 336-3365</a>
               <button class="primary-btn">Get a quote</button>
             </div>
             <div class="block md:hidden">
@@ -36,11 +36,11 @@
       <section class="hero-section pt-36 pb-20 sm:pb-80 lg:pt-80 lg:pb-96 relative overflow-hidden">
         <div class="container relative z-10">
           <div class="hero-section__content flex flex-col justify-center items-center text-center">
-            <h5 class="uppercase mb-4 text-xl">A better way to refinance your automobile</h5>
+            <h5 class="uppercase mb-4 text-xl text-color-theme-2">A better way to refinance your automobile</h5>
             <h1 class="text-3xl md:text-6xl">
-              <span class="block md:inline-block">Less Paperwork</span>
-              <span class="block md:inline-block">Less Time</span>
-              <span class="block">More Dollars</span>
+              <span class="block md:inline-block mb-3">Less Paperwork</span>
+              <span class="block md:inline-block mb-3">Less Time</span>
+              <span class="block text-color-theme-12">More Dollars</span>
             </h1>
             <p class="my-4">Rates as low as 1,9% APR<sup>*</sup></p>
             <button class="primary-btn mt-4">Get your quote in minutes</button>
@@ -70,7 +70,7 @@
       </section>
 
       <!-- HOW WE WORK SECTION -->
-      <section class="how-we-work-section py-12 md:py-24">
+      <section class="how-we-work-section py-12 md:py-24 bg-color-theme-9">
         <div class="container">
           <h3 class="text-center text-2xl md:text-5xl">
             <span class="block mb-4">We Make Refinancing Painless</span>
@@ -80,19 +80,19 @@
             <!-- HOW WE WORK STEP 1 -->
             <div class="how-we-work__step flex flex-col items-center justify-center mx-auto w-8/12 md:w-3/12 text-center mb-24 md:mb-0">
               <img src="static/imgs/hww-step1.svg" />
-              <h6 class="mt-5 mb-3 text-xl md:text-3xl">It starts with a quote</h6>
-              <p>(SSN not required)</p>
+              <h6 class="mt-5 mb-3 text-xl md:text-3xl text-color-theme-10">It starts with a quote</h6>
+              <p class="text-color-theme-5">(SSN not required)</p>
             </div>
             <!-- HOW WE WORK STEP 2 -->
             <div class="how-we-work__step flex flex-col items-center justify-center mx-auto w-8/12 md:w-3/12  text-center mb-24 md:mb-0">
               <img src="static/imgs/hww-step2.svg" />
-              <h6 class="mt-5 mb-3 text-xl md:text-3xl">We’ll work with banks and credit unions to get your the best rate</h6>
-              <p>(and handle the paperwork)</p>
+              <h6 class="mt-5 mb-3 text-xl md:text-3xl text-color-theme-10">We’ll work with banks and credit unions to get your the best rate</h6>
+              <p class="text-color-theme-5">(and handle the paperwork)</p>
             </div>
             <!-- HOW WE WORK STEP 3 -->
             <div class="how-we-work__step flex flex-col items-center justify-center mx-auto w-8/12 md:w-3/12  text-center md:mb-0">
               <img src="static/imgs/hww-step3.svg" />
-              <h6 class="mt-5 mb-3 text-xl md:text-3xl">Easy as that, you’re paying less on your loan, with more to spend on the things that matter</h6>
+              <h6 class="mt-5 mb-3 text-xl md:text-3xl text-color-theme-10">Easy as that, you’re paying less on your loan, with more to spend on the things that matter</h6>
             </div>
           </div>
           <div class="flex justify-center mt-2">
@@ -104,50 +104,50 @@
       <!-- SAVING SECTION -->
       <section class="calculate-saving-section py-12 md:py-24">
         <div class="container">
-          <div class="saving-calculator-cpt py-8 px-4 md:py-16 md:px-28 rounded-xl">
+          <div class="saving-calculator-cpt py-8 px-4 md:py-16 md:px-28 rounded-xl bg-color-theme-9">
               <h4 class="text-2xl md:text-4xl mb-10">Calculate your savings</h4>
               <div class="flex flex-col lg:flex-row">
                 <div class="flex-1 m-0 lg:mr-10">
                   <!-- Load Amount slider-->
                   <div class="loan-amount-slider mb-10">
-                    <p class="text-sm">Loan Amount</p>
+                    <p class="text-sm text-color-theme">Loan Amount</p>
                     <div class="flex w-full items-center h-20">
                       <div class="py-1 relative min-w-full">
                         <div class="h-2 bg-gray-200 rounded-full">
-                          <div class="absolute h-2 rounded-full bg-theme w-0" style="width: 30%;"></div>
+                          <div class="absolute h-2 rounded-full bg-color-theme w-0" style="width: 30%;"></div>
                           <div class="absolute h-4 flex items-center justify-center w-4 rounded-full bg-white shadow border border-gray-300 -ml-2 top-0 cursor-pointer" unselectable="on" onselectstart="return false;" style="left: 30%;">
                             <div class="relative -mt-2 w-1">
                               <div class="absolute z-40 opacity-100 bottom-100 mb-2 left-0 min-w-full" style="margin-left: -20.5px;">
                                 <div class="relative">
-                                  <div class="text-2xl md:text-3xl -mt-10 md:-mt-12 truncate text-xs rounded py-1 px-4 loan-amount-slider__value"><sup class="text-base">$</sup><span> 20,000</span></div>
+                                  <div class="text-2xl md:text-3xl -mt-10 md:-mt-12 truncate text-xs rounded py-1 px-4 loan-amount-slider__value font-typo-grotesk-b text-color-theme-7"><sup class="text-base">$</sup><span> 20,000</span></div>
                                 </div>
                               </div>
                             </div>
                           </div>
-                          <div class="absolute text-sm -ml-1 bottom-0 left-0 -mb-6 loan-amount-slider__start">$0</div>
-                          <div class="absolute text-sm -mr-1 bottom-0 right-0 -mb-6 loan-amount-slider__end">$2 million</div>
+                          <div class="absolute text-sm -ml-1 bottom-0 left-0 -mb-6 loan-amount-slider__start text-color-theme-4">$0</div>
+                          <div class="absolute text-sm -mr-1 bottom-0 right-0 -mb-6 loan-amount-slider__end text-color-theme-4">$2 million</div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <!-- Loan Term slider-->
                   <div class="loan-term-slider">
-                    <p class="text-sm">Loan Term</p>
+                    <p class="text-sm text-color-theme">Loan Term</p>
                     <div class="flex w-full items-center h-20">
                       <div class="py-1 relative min-w-full">
                           <div class="h-2 bg-gray-200 rounded-full">
-                            <div class="absolute h-2 rounded-full bg-theme w-0" style="width: 30%;"></div>
+                            <div class="absolute h-2 rounded-full bg-color-theme w-0" style="width: 30%;"></div>
                             <div class="absolute h-4 flex items-center justify-center w-4 rounded-full bg-white shadow border border-gray-300 -ml-2 top-0 cursor-pointer" unselectable="on" onselectstart="return false;" style="left: 30%;">
                               <div class="relative -mt-2 w-1">
                                 <div class="absolute z-40 opacity-100 bottom-100 mb-2 left-0 min-w-full" style="margin-left: -20.5px;">
                                   <div class="relative">
-                                    <div class="text-2xl md:text-3xl -mt-10 md:-mt-12 truncate text-xs rounded py-1 px-4 loan-term-slider__value">6 <span class="text-base">months</span></div>
+                                    <div class="text-2xl md:text-3xl -mt-10 md:-mt-12 truncate text-xs rounded py-1 px-4 loan-term-slider__value font-typo-grotesk-b text-color-theme-7">6 <span class="text-base">months</span></div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="absolute text-sm -ml-1 bottom-0 left-0 -mb-6 loan-term-slider__start">1 month</div>
-                            <div class="absolute text-sm -mr-1 bottom-0 right-0 -mb-6 loan-term-slider__end">48 months</div>
+                            <div class="absolute text-sm -ml-1 bottom-0 left-0 -mb-6 loan-term-slider__start text-color-theme-4">1 month</div>
+                            <div class="absolute text-sm -mr-1 bottom-0 right-0 -mb-6 loan-term-slider__end text-color-theme-4">48 months</div>
                           </div>
                         </div>
                     </div>
@@ -173,10 +173,10 @@
                 <div class="flex-1 ml-0 lg:ml-4 mt-12 lg:mt-0">
                   <div class="flex flex-col items-center md:items-start bg-white rounded-xl py-8 px-10 relative">
                     <p class="mb-4">You could have</p>
-                    <div class="color-theme text-6xl md:text-8xl mb-4">
+                    <div class="text-color-theme text-6xl md:text-8xl mb-4">
                       <span>$</span><span>4,515</span>
                     </div>
-                    <p class="color-theme mb-10">In interest</p>
+                    <p class="text-color-theme mb-10">In interest</p>
                     <button class="absolute -bottom-5 primary-btn">Start saving today</button>
                   </div>
                 </div>
@@ -186,7 +186,7 @@
       </section>
 
       <!-- AUTO REFINANCE SECTION -->
-      <section class="auto-refinance-section pt-20 md:pt-0 pb-12 md:pb-24">
+      <section class="auto-refinance-section pt-20 md:pt-0 pb-12 md:pb-24 bg-color-theme-9 md:bg-color-white">
         <div class="container">
           <h3 class="w-full md:w-6/12 mx-auto text-center text-2xl md:text-5xl mb-8">
             The right product to save you money
@@ -196,22 +196,22 @@
           </p>
           <div class="auto-refinance__products flex flex-col md:flex-row justify-center items-start md:justify-between py-12 mt-10">
             <div class="auto-refinance__product flex flex-col items-center justify-center mx-auto bg-white rounded-xl p-9 md:p-0 w-11/12 md:w-3/12 text-center mb-12 md:mb-0">
-              <h4 class="text-2xl mb-4">Auto Refinance</h4>
+              <h4 class="text-2xl mb-4 text-color-theme-10 font-typo-grotesk-b">Auto Refinance</h4>
               <img src="static/imgs/auto-refinance-1.svg" />
-              <p class="mt-5 mb-3">Most people are paying too much on their car loan Put that money back in your pocket, we’ll help you get the rate you deserve</p>
-              <a href="#">Learn more</a>
+              <p class="mt-5 mb-3 text-color-theme-6">Most people are paying too much on their car loan Put that money back in your pocket, we’ll help you get the rate you deserve</p>
+              <a class="text-color-theme-12" href="#">Learn more</a>
             </div>
             <div class="auto-refinance__product flex flex-col items-center justify-center mx-auto bg-white rounded-xl p-9 md:p-0 w-11/12 md:w-3/12  text-center mb-12 md:mb-0">
-              <h4 class="text-2xl mb-4">Auto Lease Buyback</h4>
+              <h4 class="text-2xl mb-4 text-color-theme-10 font-typo-grotesk-b">Auto Lease Buyback</h4>
               <img src="static/imgs/auto-refinance-2.svg" />
-              <p class="mt-5 mb-3">Ready to own your car? Our auto lease purchasing options make it possible – and affordable</p>
-              <a href="#">Learn more</a>
+              <p class="mt-5 mb-3 text-color-theme-6">Ready to own your car? Our auto lease purchasing options make it possible – and affordable</p>
+              <a class="text-color-theme-12" href="#">Learn more</a>
             </div>
             <div class="auto-refinance__product flex flex-col items-center justify-center mx-auto bg-white rounded-xl p-9 md:p-0 w-11/12 md:w-3/12  text-center md:mb-0 mb-4">
-              <h4 class="text-2xl">Motorcycle Refinance</h4>
+              <h4 class="text-2xl text-color-theme-10 font-typo-grotesk-b">Motorcycle Refinance</h4>
               <img src="static/imgs/auto-refinance-3.svg" />
-              <p class="mt-5 mb-3">Yep, we can refinance your hog too Or your RV, ATV, or boat (And if you have all four, be our friend?)</p>
-              <a href="#">Learn more</a>
+              <p class="mt-5 mb-3 text-color-theme-6">Yep, we can refinance your hog too Or your RV, ATV, or boat (And if you have all four, be our friend?)</p>
+              <a class="text-color-theme-12" href="#">Learn more</a>
             </div>
           </div>
         </div>
@@ -227,38 +227,38 @@
             <!-- AUTO APPROVE REASON 1 -->
             <div class="auto-approve__reason flex flex-col items-center justify-center mx-auto w-8/12 md:w-3/12 text-center mb-16 w-10/12 md:w-4/12">
               <img src="static/imgs/auto-approve-1.svg" />
-              <h4 class="text-xl mt-8 text-center w-10/12">It’s time to make a change</h4>
-              <p class="mt-2 px-0 md:px-8">Interest rates today are historically low – most people are paying too much on their auto loan Now is the time to refinance and lower your monthly payment We’ll make it happen</p>
+              <h4 class="text-xl mt-8 text-center w-10/12 text-color-theme-8 font-typo-grotesk-b">It’s time to make a change</h4>
+              <p class="mt-2 px-0 md:px-8 text-color-theme-6">Interest rates today are historically low – most people are paying too much on their auto loan Now is the time to refinance and lower your monthly payment We’ll make it happen</p>
             </div>
             <!-- AUTO APPROVE REASON 1 -->
             <div class="auto-approve__reason flex flex-col items-center justify-center mx-auto w-8/12 md:w-3/12  text-center mb-16 w-10/12 md:w-4/12">
               <img src="static/imgs/auto-approve-2.svg" />
-              <h4 class="text-xl mt-8 text-center w-10/12">Our customers love us</h4>
-              <p class="mt-2 px-0 md:px-8">With an A+ rating from the Better Business Bureau and a 96% would-recommend rating on LendingTree, you can refinance with us with confidence</p>
+              <h4 class="text-xl mt-8 text-center w-10/12 text-color-theme-8 font-typo-grotesk-b">Our customers love us</h4>
+              <p class="mt-2 px-0 md:px-8 text-color-theme-6">With an A+ rating from the Better Business Bureau and a 96% would-recommend rating on LendingTree, you can refinance with us with confidence</p>
             </div>
             <!-- AUTO APPROVE REASON 3 -->
             <div class="auto-approve__reason flex flex-col items-center justify-center mx-auto w-8/12 md:w-3/12  text-center mb-16 mb-4 w-10/12 md:w-4/12">
               <img src="static/imgs/auto-approve-3.svg" />
-              <h4 class="text-xl mt-8 text-center w-10/12">The personalized service you deserve</h4>
-              <p class="mt-2 px-0 md:px-8">At Auto Approve, you get the service that works for you Want a human? We’re real people and ready to chat Hate the phone? That’s cool too Do everything online, no humans required</p>
+              <h4 class="text-xl mt-8 text-center w-10/12 text-color-theme-8 font-typo-grotesk-b">The personalized service you deserve</h4>
+              <p class="mt-2 px-0 md:px-8 text-color-theme-6">At Auto Approve, you get the service that works for you Want a human? We’re real people and ready to chat Hate the phone? That’s cool too Do everything online, no humans required</p>
             </div>
             <!-- AUTO APPROVE REASON 4 -->
             <div class="auto-approve__reason flex flex-col items-center justify-center mx-auto w-8/12 md:w-3/12 text-center mb-16 w-10/12 md:w-4/12">
               <img src="static/imgs/auto-approve-4.svg" />
-              <h4 class="text-xl mt-8 text-center w-10/12">The deal that’s right for you</h4>
-              <p class="mt-2 px-0 md:px-8">We’ll work to personally make sure you get the best deal for you We’re your advocate, getting lenders to compete to find a great fit for your needs And then we do the paperwork to make it happen (Yes, we even handle the DMV)</p>
+              <h4 class="text-xl mt-8 text-center w-10/12 text-color-theme-8 font-typo-grotesk-b">The deal that’s right for you</h4>
+              <p class="mt-2 px-0 md:px-8 text-color-theme-6">We’ll work to personally make sure you get the best deal for you We’re your advocate, getting lenders to compete to find a great fit for your needs And then we do the paperwork to make it happen (Yes, we even handle the DMV)</p>
             </div>
             <!-- AUTO APPROVE REASON 5 -->
             <div class="auto-approve__reason flex flex-col items-center justify-center mx-auto w-8/12 md:w-3/12  text-center mb-16 w-10/12 md:w-4/12">
               <img src="static/imgs/auto-approve-5.svg" />
-              <h4 class="text-xl mt-8 text-center w-10/12">No mark-ups Ever</h4>
-              <p class="mt-2 px-0 md:px-8">Unlike our competitors, we never mark up the rate you pay Some companies will give you a higher rate than the bank actually offers and pocket the difference With Auto Approve, your savings are passed on to you directly</p>
+              <h4 class="text-xl mt-8 text-center w-10/12 text-color-theme-8 font-typo-grotesk-b">No mark-ups Ever</h4>
+              <p class="mt-2 px-0 md:px-8 text-color-theme-6">Unlike our competitors, we never mark up the rate you pay Some companies will give you a higher rate than the bank actually offers and pocket the difference With Auto Approve, your savings are passed on to you directly</p>
             </div>
             <!-- AUTO APPROVE REASON 6 -->
             <div class="auto-approve__reason flex flex-col items-center justify-center mx-auto w-8/12 md:w-3/12  text-center m-0 md:mb-16 w-10/12 md:w-4/12">
               <img src="static/imgs/auto-approve-6.svg" />
-              <h4 class="text-xl mt-8 text-center w-10/12">More money in your pocket</h4>
-              <p class="mt-2 px-0 md:px-8">The most important thing we do is? We lower your monthly payments Refinance with Auto Approve, you’ll have more cash to spend on the things you love Because, in the end, our mission is more money for what matters to you</p>
+              <h4 class="text-xl mt-8 text-center w-10/12 text-color-theme-8 font-typo-grotesk-b">More money in your pocket</h4>
+              <p class="mt-2 px-0 md:px-8 text-color-theme-6">The most important thing we do is? We lower your monthly payments Refinance with Auto Approve, you’ll have more cash to spend on the things you love Because, in the end, our mission is more money for what matters to you</p>
             </div>
           </div>
         </div>
@@ -266,18 +266,18 @@
       </section>
 
       <!-- TESTIMONIAL SECTION -->
-      <section class="testimonial-section bg-theme py-12 md:py-24">
+      <section class="testimonial-section bg-color-theme py-12 md:py-24">
         <div class="container">
-          <h2 class="mx-auto w-10/12 flex justify-center items-center text-3xl md:text-5xl">
+          <h2 class="mx-auto w-10/12 flex justify-center items-center text-3xl md:text-5xl text-color-white">
             <span>Real Customers Real Reviews</span>
             <img class="ml-0 md:ml-10 mt-4 md:mt-0" src="static/imgs/smile-green.svg" alt="Happy Customer">
           </h2>
           <div class="testimonials mt-10 md:mt-20 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-between">
-            <div class="testimonial w-full sm:w-8/12 lg:w-4/12 mr-0 lg:mr-8 mb-10 lg:mb-0 rounded-2xl bg-theme-dark p-8 md:p-12">
+            <div class="testimonial w-full sm:w-8/12 lg:w-4/12 mr-0 lg:mr-8 mb-10 lg:mb-0 rounded-2xl bg-color-theme-10 p-8 md:p-12">
               <div class="testomnial__header flex items-start justify-between mb-8">
                 <img src="static/imgs/testimonial-quote.svg" />
                 <div class="flex-1 ml-3">
-                  <span class="color-white">Full Name</span>
+                  <span class="text-color-white">Full Name</span>
                   <div class="flex">
                     <img class="ml-0" src="static/imgs/testimonial-green-star.svg" />
                     <img class="ml-1" src="static/imgs/testimonial-green-star.svg" />
@@ -288,15 +288,15 @@
                 </div>
                 <img src="static/imgs/testimonial-logo1.svg" />
               </div>
-              <p class="color-white">
+              <p class="text-color-white">
                 Amet minim mollit non deserunt ullamco est aliqua dolor do amet sint Velit officia consequa
               </p>
             </div>
-              <div class="testimonial w-full sm:w-8/12 lg:w-4/12 mr-0 lg:mr-8 mb-10 lg:mb-0 rounded-2xl bg-theme-dark p-8 md:p-12">
+              <div class="testimonial w-full sm:w-8/12 lg:w-4/12 mr-0 lg:mr-8 mb-10 lg:mb-0 rounded-2xl bg-color-theme-10 p-8 md:p-12">
                 <div class="testomnial__header flex items-start justify-between mb-8">
                   <img src="static/imgs/testimonial-quote.svg" />
                   <div class="flex-1 ml-3">
-                    <span class="color-white">Full Name</span>
+                    <span class="text-color-white">Full Name</span>
                     <div class="flex">
                       <img class="ml-0" src="static/imgs/testimonial-green-star.svg" />
                       <img class="ml-1" src="static/imgs/testimonial-green-star.svg" />
@@ -307,15 +307,15 @@
                   </div>
                   <img src="static/imgs/testimonial-logo2.svg" />
                 </div>
-                <p class="color-white">
+                <p class="text-color-white">
                   Amet minim mollit non deserunt ullamco est aliqua dolor do amet sint Velit officia consequa
                 </p>
               </div>
-              <div class="testimonial w-full sm:w-8/12 lg:w-4/12 mr-0 rounded-2xl bg-theme-dark p-8 md:p-12">
+              <div class="testimonial w-full sm:w-8/12 lg:w-4/12 mr-0 rounded-2xl bg-color-theme-10 p-8 md:p-12">
                 <div class="testomnial__header flex items-start justify-between mb-8">
                   <img src="static/imgs/testimonial-quote.svg" />
                   <div class="flex-1 ml-3">
-                    <span class="color-white">Full Name</span>
+                    <span class="text-color-white">Full Name</span>
                     <div class="flex">
                       <img class="ml-0" src="static/imgs/testimonial-green-star.svg" />
                       <img class="ml-1" src="static/imgs/testimonial-green-star.svg" />
@@ -326,7 +326,7 @@
                   </div>
                   <img src="static/imgs/testimonial-logo2.svg" />
                 </div>
-                <p class="color-white">
+                <p class="text-color-white">
                   Amet minim mollit non deserunt ullamco est aliqua dolor do amet sint Velit officia consequa
                 </p>
               </div>
@@ -338,7 +338,7 @@
       </section>
 
       <!-- RESOURCES SECTION -->
-      <section class="resources-section py-12 md:py-24">
+      <section class="resources-section py-12 md:py-24 bg-color-theme-9">
         <div class="container">
           <h2 class="flex flex-col md:flex-row items-center justify-center items-center text-center text-3xl md:text-5xl">
             Resources
@@ -346,20 +346,20 @@
           <div class="resources-section__resources mt-10 md:mt-20 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-between">
             <!-- RESOURCES ITEM 1 -->
             <div class="resources-section__resource w-full sm:w-10/12 md:w-6/12 mr-0 md:mr-8 mb-10 lg:mb-0 rounded-3xl p-12 bg-cover p-9">
-              <h6 class="text-sm mb-6 color-white">Article</h6>
-              <h5 class="text-3xl mb-6 color-white">Article Title Goes Right Here</h5>
+              <h6 class="text-sm mb-6 text-color-white">Article</h6>
+              <h5 class="text-3xl mb-6 text-color-white">Article Title Goes Right Here</h5>
               <img src="static/imgs/arrow-right.svg" />
             </div>
             <!-- RESOURCES ITEM 1 -->
             <div class="resources-section__resource w-full sm:w-10/12 md:w-6/12 mr-0 md:mr-8 mb-10 lg:mb-0 rounded-3xl p-12 bg-cover p-9">
-              <h6 class="text-sm mb-6 color-white">Article</h6>
-              <h5 class="text-3xl mb-6 color-white">Article Title Goes Right Here</h5>
+              <h6 class="text-sm mb-6 text-color-white">Article</h6>
+              <h5 class="text-3xl mb-6 text-color-white">Article Title Goes Right Here</h5>
               <img src="static/imgs/arrow-right.svg" />
             </div>
             <!-- RESOURCES ITEM 3 -->
             <div class="resources-section__resource w-full sm:w-10/12 md:w-6/12 mr-0 md:mr-8 mb-0 lg:mb-10 rounded-3xl p-12 bg-cover p-9">
-              <h6 class="text-sm mb-6 color-white">Article</h6>
-              <h5 class="text-3xl mb-6 color-white">Article Title Goes Right Here</h5>
+              <h6 class="text-sm mb-6 text-color-white">Article</h6>
+              <h5 class="text-3xl mb-6 text-color-white">Article Title Goes Right Here</h5>
               <img src="static/imgs/arrow-right.svg" />
             </div>
           </div>
@@ -379,70 +379,70 @@
       </section>
 
       <!-- FOOTER SECTION -->
-      <footer class="footer-section pt-12 pb-12 md:pt-24 relative">
+      <footer class="footer-section pt-12 pb-12 md:pt-24 relative bg-color-theme-10">
         <img class="2xl:block absolute bottom-8 md:bottom-24 right-4 md:right-10" src="static/imgs/chat-icon.svg" />
         <div class="container">
           <div class="flex flex-col md:flex-row items-center justify-center md:justify-between">
             <a class="mb-10 md:mb-0" href="#"><img src="static/imgs/autoapprove-logo-white.svg" alt="Auto Approve" /></a>
             <div class="flex items-center justify-center md:justify-end">
               <button class="order-1 md:order-2 green-btn mr-10 md:mr-0">Get Quote</button>
-              <a class="order-2 md:order-1 color-theme mb-0 mt-3 lg:mb-3 color-green mr-0 md:mr-10" href="tel:(844) 336-3365">(844) 336-3365</a>
+              <a class="order-2 md:order-1 text-color-theme mb-0 mt-3 lg:mb-3 text-color-theme-12 mr-0 md:mr-10" href="tel:(844) 336-3365">(844) 336-3365</a>
             </div>
           </div>
-          <div class="flex flex-col md:flex-row justify-between py-5 md:py-12 footer-links md:border-t md:border-b my-5 md:my-12">
+          <div class="flex flex-col md:flex-row justify-between py-5 md:py-12 footer-links border-gray-100 border-opacity-10 md:border-t md:border-b my-5 md:my-12">
             <!-- FOOTER LINKS COL 1-->
             <div>
-              <div class="footer-links__header flex justify-between items-center border-b md:border-b-0 py-4 md:py-0">
-                <h6 class="text-xl m-0 md:mb-4">Products</h6>
+              <div class="footer-links__header flex justify-between items-center border-gray-100 border-opacity-10 border-b md:border-b-0 py-4 md:py-0">
+                <h6 class="text-xl m-0 md:mb-4 text-color-white font-typo-grotesk-b">Products</h6>
                 <img class="block md:hidden" src="static/imgs/chevron-down.svg" />
               </div>
               <nav class="hidden md:flex flex-col">
-                <a href="#" class="mb-2">Vehicle Refinance</a>
-                <a href="#" class="mb-2">Lease Purchase</a>
-                <a href="#" class="mb-2">Motorcycle Refinance</a>
+                <a href="#" class="mb-2 text-color-white">Vehicle Refinance</a>
+                <a href="#" class="mb-2 text-color-white">Lease Purchase</a>
+                <a href="#" class="mb-2 text-color-white">Motorcycle Refinance</a>
               </nav>
             </div>
             <!-- FOOTER LINKS COL 2 -->
             <div>
-              <div class="footer-links__header flex justify-between items-center border-b md:border-b-0 py-4 md:py-0">
-                <h6 class="text-xl m-0 md:mb-4">Resources</h6>
+              <div class="footer-links__header flex justify-between items-center border-gray-100 border-opacity-10 border-b md:border-b-0 py-4 md:py-0">
+                <h6 class="text-xl m-0 md:mb-4 text-color-white font-typo-grotesk-b">Resources</h6>
                 <img class="block md:hidden" src="static/imgs/chevron-down.svg" />
               </div>
               <nav class="hidden md:flex flex-col">
-                <a href="#" class="mb-2">Auto Approve Reviews</a>
-                <a href="#" class="mb-2">Resources</a>
+                <a href="#" class="mb-2 text-color-white">Auto Approve Reviews</a>
+                <a href="#" class="mb-2 text-color-white">Resources</a>
               </nav>
             </div>
             <!-- FOOTER LINKS COL 3 -->
             <div>
-              <div class="footer-links__header flex justify-between items-center border-b md:border-b-0 py-4 md:py-0">
-                <h6 class="text-xl m-0 md:mb-4">Company</h6>
+              <div class="footer-links__header flex justify-between items-center border-gray-100 border-opacity-10 border-b md:border-b-0 py-4 md:py-0">
+                <h6 class="text-xl m-0 md:mb-4 text-color-white font-typo-grotesk-b">Company</h6>
                 <img class="block md:hidden" src="static/imgs/chevron-down.svg" />
               </div>
               <nav class="flex flex-col md:flex-row">
                 <div class="hidden md:flex flex-col mr-8">
-                  <a href="#" class="mb-2">About</a>
-                  <a href="#" class="mb-2">Newsroom</a>
-                  <a href="#" class="mb-2">Join the Team</a>
+                  <a href="#" class="mb-2 text-color-white">About</a>
+                  <a href="#" class="mb-2 text-color-white">Newsroom</a>
+                  <a href="#" class="mb-2 text-color-white">Join the Team</a>
                 </div>
                 <div class="hidden md:flex flex-col">
-                  <a href="#" class="mb-2">Contact Us</a>
-                  <a href="#" class="mb-2">Legal Stuff</a>
-                  <a href="#" class="mb-2">Terms of Service</a>
+                  <a href="#" class="mb-2 text-color-white">Contact Us</a>
+                  <a href="#" class="mb-2 text-color-white">Legal Stuff</a>
+                  <a href="#" class="mb-2 text-color-white">Terms of Service</a>
                 </div>
               </nav>
             </div>
             <!-- FOOTER LINKS COL 4 -->
             <div>
-              <div class="footer-links__header flex justify-between items-center border-b md:border-b-0 py-4 md:py-0">
-                <h6 class="text-xl m-0 md:mb-4">FAQ</h6>
+              <div class="footer-links__header flex justify-between items-center border-gray-100 border-opacity-10 border-b md:border-b-0 py-4 md:py-0">
+                <h6 class="text-xl m-0 md:mb-4 text-color-white font-typo-grotesk-b">FAQ</h6>
                 <img class="block md:hidden" src="static/imgs/chevron-down.svg" />
               </div>
             </div>
             <!-- FOOTER LINKS COL 4 -->
             <div class="block md:hidden">
-              <div class="footer-links__header flex justify-between items-center border-b-0 py-4 md:py-0">
-                <h6 class="text-xl m-0 md:mb-4">Calculators</h6>
+              <div class="footer-links__header flex justify-between items-center border-gray-100 border-opacity-10 border-b-0 py-4 md:py-0">
+                <h6 class="text-xl m-0 md:mb-4 text-color-white font-typo-grotesk-b">Calculators</h6>
                 <img class="block md:hidden" src="static/imgs/chevron-down.svg" />
               </div>
             </div>

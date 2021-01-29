@@ -1,7 +1,21 @@
-/* Tailwind */
+/* Variables */
+$theme-color: #5230A2;
+$theme-color2: #6948B7;
+$theme-color3: #808080;
+$theme-color4: #A7B4C0;
+$theme-color5: #898A8D;
+$theme-color6: #4F5154;
+$theme-color7: #254254;
+$theme-color8: #232529;
+$theme-color9: #F9F8FB;
+$theme-color10: #200A52;
+$theme-color11: #140539;
+$theme-color12: #44E0B7;
+$white-color: #ffffff;
+$black-color: #000000;
 
 /* Typography */
-@font-face{
+@font-face {
   font-family: TypoGrosteskDemo;
   src: url(../fonts/TypoGroteskDemo.otf) format('opentype');
   font-weight:400;
@@ -19,110 +33,54 @@ body {
   font-family: TypoGrosteskDemo;
 }
 
-/* Helpers */
-.color-theme {
-  color: #5230A2;
-}
-
-.bg-theme {
-  background: #5230A2;
-}
-
-.bg-theme-dark {
-  background: #200A52;
-}
-
-.color-white {
-  color: #ffffff;
-}
-
-.color-green {
-  color: #44E0B7;
-}
-
-/* Components */
-.primary-btn {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 28px;
-  color: #FFFFFF;
-  background: #5230A2;
-  border-radius: 27px;
-  transition: all 0.3s ease-in-out;
-  padding: 8px 32px;
-  text-decoration: none;
-  box-shadow: none;
-}
-
-.primary-btn:hover,
-.primary-btn:focus {
-  outline: none;
-  opacity: 0.9;
-}
-
-.green-btn {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 28px;
-  color: #000000;
-  background: #44E0B7;
-  border-radius: 27px;
-  transition: all 0.3s ease-in-out;
-  padding: 8px 32px;
-}
-
-.green-btn:hover,
-.green-btn:focus {
-  outline: none;
-  opacity: 0.9;
-}
-
-.input-container label {
-  color: #5230A2;
-}
-
-.input-container > div {
-  background: #ffffff;
-}
-
-.input-container > div span:last-child {
-  color: #A7B4C0;
-}
-
-.input-subscribe {
-  background: #140539;
-  height: 52px;
-  max-width: 372px;
-  width: 100%;
-}
-
-.input-subscribe input {
-  height: 52px;
-  color: #ffffff;
-  background: #140539;
-}
-
-
-/* Header Section */
-.header-section nav a {
-  color: #6948B7;
-}
-
-.header-section__quote a {
+.font-typo-grotesk-b {
   font-family: TypoGrosteskBoldDemo;
 }
 
+/* Buttons Component */
+.primary-btn,
+.green-btn {
+  @apply not-italic font-bold text-base leading-8 rounded-3xl transition-opacity duration-300 ease-in-out py-2 px-8 no-underline shadow-none;
+}
+
+.primary-btn {
+  @apply text-color-white bg-color-theme;
+}
+
+.green-btn {
+  @apply text-color-black bg-color-theme-12;
+}
+
+.primary-btn:hover,
+.primary-btn:focus,
+.green-btn:hover,
+.green-btn:focus {
+  @apply opacity-90 outline-none;
+}
+
+/* Input component */
+.input-container label {
+  @apply text-color-theme;
+}
+
+.input-container > div {
+  @apply bg-color-white;
+}
+
+.input-container > div span:last-child {
+  @apply text-color-theme-3;
+}
+
+/* Input with icon component */
+.input-subscribe {
+  @apply bg-color-theme-11 h-12 max-w-sm w-full;
+}
+
+.input-subscribe input {
+  @apply h-12 text-color-white bg-color-theme-11;
+}
+
 /* Hero Section */
-.hero-section__content h5 {
-  color: #6948B7;
-}
-
-.hero-section__content h1 span:last-child {
-  color: #44E0B7;
-}
-
 .hero-motorcycle-img {
   bottom: 18%;
   left: 0;
@@ -138,7 +96,7 @@ body {
 }
 
 .hero-vector-49 {
-  top: 84%;
+  top: 83%;
   right: 0;
 }
 
@@ -158,7 +116,7 @@ body {
 }
 
 .hero-vector-37 {
-  bottom: 65%;
+  bottom: 75%;
   right: 18%;
 }
 .hero-vector-39 {
@@ -204,7 +162,7 @@ body {
   }
 
   .hero-vector-46 {
-    top: 84%;
+    top: 83%;
     width: 68%;
   }
 
@@ -220,87 +178,7 @@ body {
   }
 }
 
-/* How we work section */
-.how-we-work-section {
-  background: #F9F8FB;
-}
-
-.how-we-work__step h5 {
-  color: #200A52;
-}
-
-.how-we-work__step p {
-  color:#898A8D;
-}
-
-/* Calculator Section */
-.saving-calculator-cpt {
-  background: #F9F8FB;
-}
-
-.loan-amount-slider > p,
-.loan-term-slider > p {
-  color: #5230A2;
-}
-
-.loan-amount-slider__start,
-.loan-amount-slider__end,
-.loan-term-slider__start,
-.loan-term-slider__end {
-  color: #A7B4C0;
-}
-
-.loan-amount-slider__value,
-.loan-term-slider__value  {
-  color: #254254;
-  font-family: TypoGrosteskBoldDemo;
-}
-
-/* Auto Refinance section */
-.auto-refinance-section {
-  background: #F9F8FB;
-}
-
-.auto-refinance__product h4 {
-  color: #200A52;
-  font-family: TypoGrosteskBoldDemo;
-}
-
-.auto-refinance__product p {
-  color: #4F5154;
-}
-
-.auto-refinance__product a {
-  color: #44E0B7;
-}
-
-
-@media only screen and (min-width: 768px) {
-  .auto-refinance-section {
-    background: #ffffff;
-  }
-}
-
-/* Auto Approve section */
-.auto-approve__reason h4 {
-  color: #232529;
-  font-family: TypoGrosteskBoldDemo;
-}
-
-.auto-approve__reason p {
-  color: #4F5154;
-}
-
-/* Testimonial section */
-.testimonial-section h2 {
-  color: #ffffff;
-}
-
 /* Resources section */
-.resources-section {
-  background: #F9F8FB;
-}
-
 .resources-section__resources > div:nth-of-type(1) {
   background-image: url(../../static/imgs/resource-1.png);
 }
@@ -315,26 +193,4 @@ body {
 
 .resources-section__resource {
   min-height: 324px;
-}
-
-/* Footer Section */
-.footer-section {
-  background: #200A52;
-}
-
-.footer-links {
-  border-color: rgb(211 211 211 / 10%);
-}
-
-.footer-links h6 {
-  color: white;
-  font-family: TypoGrosteskBoldDemo;
-}
-
-.footer-links nav a {
-  color: #ffffff;
-}
-
-.footer-links__header {
-  border-color: rgb(211 211 211 / 10%);
 }
